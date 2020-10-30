@@ -21,7 +21,9 @@ const Airbnb: FC<Props> = () => {
   }, []);
   return (
     <Wrapper>
-      <Logo>J</Logo>
+      <Link to="/">
+        <Logo>J</Logo>
+      </Link>
       <Section>
         <div className="col1 hero">
           <div className="sub">
@@ -165,10 +167,14 @@ const Logo = styled.div`
   align-items: center;
   position: fixed;
   width: 40px;
+  top: 6em;
   height: 40px;
-  top: 4em;
   background-color: #000;
   color: #fff;
+
+  @media (max-width: 950px) {
+    top: 0;
+  }
 `;
 const Section = styled.section`
   width: 100%;

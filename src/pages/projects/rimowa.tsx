@@ -162,6 +162,10 @@ const Logo = styled.div`
   top: 4em;
   background-color: #000;
   color: #fff;
+
+  @media (max-width: 950px) {
+    top: 0;
+  }
 `;
 
 const Section = styled.section`

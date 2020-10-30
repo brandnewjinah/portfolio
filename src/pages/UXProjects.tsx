@@ -119,6 +119,10 @@ const Logo = styled.div`
   top: 6em;
   background-color: #8db09f;
   color: #e2f0e9;
+
+  @media (max-width: 950px) {
+    top: 0;
+  }
 `;
 
 const Section = styled.section`
@@ -128,6 +132,10 @@ const Section = styled.section`
   display: flex;
   margin: 0 auto;
   padding: 4em 12em;
+
+  a {
+    width: 100%;
+  }
 
   .col1 {
     flex: 0 0 25%;

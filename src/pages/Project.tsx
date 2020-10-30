@@ -96,6 +96,10 @@ const Project: FC<Props> = () => {
 
 const Container = styled.div`
   color: #3f6151;
+
+  a {
+    width: 100%;
+  }
 `;
 
 const Header = styled.div`

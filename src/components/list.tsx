@@ -28,6 +28,7 @@ const List: FC<Props> = ({ img, title, overline, children, color }) => {
 };
 
 const Container = styled.div`
+  width: 100%;
   border-bottom: 1px solid;
   padding-bottom: 2em;
   margin-bottom: 2em;

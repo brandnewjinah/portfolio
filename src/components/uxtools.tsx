@@ -10,9 +10,9 @@ const UXTools: FC<Props> = () => {
   return (
     <Container>
       <div>
-        I have been working as UX/UI designer for over 10 years. Industries I've
-        worked in includes but not limited to e-commerce, SaaS, technology, and
-        non-profit organizations.
+        I have been working as UX/UI designer for over 10 years in industries
+        like e-commerce, SaaS, marketing, technology, and non-profit
+        organizations.
       </div>
       <div style={{ marginTop: `1.5em` }}>
         I'm comfortable using XD, Figma and Sketch.
