@@ -51,6 +51,15 @@ const Container = styled.div`
     width: 200px;
     object-fit: cover;
   }
+
+  @media (max-width: 950px) {
+    flex-direction: column;
+    align-items: center;
+
+    .image {
+      margin-right: 0;
+    }
+  }
 `;
 
 const Description = styled.div`
@@ -72,6 +81,7 @@ const Description = styled.div`
   }
 
   @media (max-width: 950px) {
+    text-align: center;
     h4 {
       line-height: 2rem;
     }
