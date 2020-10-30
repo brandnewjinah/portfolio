@@ -164,6 +164,10 @@ const Section = styled.section`
       max-width: 100%;
     }
 
+    .col2 {
+      display: block;
+    }
+
     .hero {
       padding-top: 0.875em;
     }

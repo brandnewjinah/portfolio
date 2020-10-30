@@ -202,14 +202,9 @@ const Section = styled.section`
 
   .col2 {
     max-width: 100%;
-    /* background-color: green; */
     display: flex;
     flex-direction: column;
     flex: 1 0 0; //grow, shrink , basis
-
-    p {
-      /* margin: 2em 0; */
-    }
   }
 
   .media {
@@ -255,6 +250,10 @@ const Section = styled.section`
       max-width: 100%;
     }
 
+    .col2 {
+      display: block;
+    }
+
     .hero {
       padding-top: 0.875em;
     }
@@ -280,10 +279,16 @@ const Section = styled.section`
     }
 
     .media {
+      display: block;
+
       img {
         width: 100%;
         object-fit: cover;
         margin: 1em 0;
+      }
+
+      iframe {
+        width: 100%;
       }
     }
   }

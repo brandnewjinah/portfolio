@@ -132,6 +132,11 @@ const Section = styled.section`
       max-width: 100%;
     }
 
+    .col2 {
+      max-width: 100%;
+      display: block;
+    }
+
     .sub {
       justify-content: flex-start;
       margin-bottom: 3em;

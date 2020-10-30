@@ -285,6 +285,10 @@ const Section = styled.section`
       max-width: 100%;
     }
 
+    .col2 {
+      display: block;
+    }
+
     .hero {
       padding-top: 0.875em;
     }
@@ -310,10 +314,16 @@ const Section = styled.section`
     }
 
     .media {
+      display: block;
+
       img {
         width: 100%;
         object-fit: cover;
         margin: 1em 0;
+      }
+
+      iframe {
+        width: 100%;
       }
     }
   }
