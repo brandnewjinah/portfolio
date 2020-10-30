@@ -115,7 +115,7 @@ const Tools: FC<Props> = () => {
             <h5>Node</h5>
             <p>
               I'm currently stuying Node to better understand how everything
-              ties together in the web.
+              ties together in the web
             </p>
           </div>
         </Tool>

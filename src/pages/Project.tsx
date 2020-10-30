@@ -32,10 +32,7 @@ const Project: FC<Props> = () => {
           overline="Web Development"
           color="#9dbbad"
         >
-          <p>
-            Rebranding and website creation for conferences technical challenge
-            hello is this long enough.
-          </p>
+          <p>Rimowa.com is an e-commerce site for luxury travel gears.</p>
         </List>
       </Link>
       <Link to="/abbapp">
@@ -45,10 +42,7 @@ const Project: FC<Props> = () => {
           overline="Mobile Development"
           color="#9dbbad"
         >
-          <p>
-            Rebranding and website creation for conferences technical challenge
-            hello is this long enough.
-          </p>
+          <p>Airbnb App clone project using React Native.</p>
         </List>
       </Link>
       <Link to="/uicomp">
@@ -58,10 +52,7 @@ const Project: FC<Props> = () => {
           overline="Mobile Development"
           color="#9dbbad"
         >
-          <p>
-            Rebranding and website creation for conferences technical challenge
-            hello is this long enough.
-          </p>
+          <p>Custom UI components for React Native.</p>
         </List>
       </Link>
       <Link to="/abb">
@@ -71,10 +62,7 @@ const Project: FC<Props> = () => {
           overline="Web Development"
           color="#9dbbad"
         >
-          <p>
-            Rebranding and website creation for conferences technical challenge
-            hello is this long enough.
-          </p>
+          <p>Airbnb.co.kr site clone using React.</p>
         </List>
       </Link>
       <Link to="/uxprojects">

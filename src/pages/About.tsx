@@ -12,8 +12,8 @@ const About: FC<Props> = () => {
       <h1 className="header">& UX/UI Designer</h1>
       <p className="about">
         My name is Jinah Lee and I'm a front-end developer with UX/UI design
-        background. I enjoy solving user problems and translating the solutions
-        onto the right technologies.
+        background. I enjoy solving user problems and I want to deliver
+        delightful user experiences with the help of right technologies.
       </p>
     </Container>
   );
