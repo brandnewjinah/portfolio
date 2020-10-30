@@ -116,6 +116,14 @@ const Section = styled.section`
     }
   }
 
+  @media (max-width: 1024px) {
+    .email {
+      font-family: "Raleway", sans-serif;
+      font-weight: 700;
+      font-size: 2rem;
+    }
+  }
+
   @media (max-width: 950px) {
     flex-direction: column;
     padding: 2em;

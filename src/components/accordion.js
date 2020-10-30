@@ -18,7 +18,7 @@ const Skills = ({ title, children }) => {
     <Container>
       <div>
         <div className="flex" onClick={() => setActive(!active)}>
-          <h1>{title}</h1>
+          <h1 className="header">{title}</h1>
           <Icon
             style={
               active
@@ -46,6 +46,13 @@ const Container = styled.section`
     display: flex;
     justify-content: space-between;
     align-items: center;
+  }
+
+  @media (max-width: 950px) {
+    .header {
+      font-size: 2.5rem;
+      line-height: 2.75rem;
+    }
   }
 `;
 

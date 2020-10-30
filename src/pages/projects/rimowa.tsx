@@ -6,11 +6,7 @@ import { useHistory, Link } from "react-router-dom";
 //import syles and assets
 import styled from "styled-components";
 import { Back } from "../../assets/Icons";
-import Cover from "../../assets/ezt/cover.jpg";
-import Approach from "../../assets/ezt/approach.png";
-import Report from "../../assets/ezt/screen1.jpg";
-import Report2 from "../../assets/ezt/screen2.jpg";
-import Mobile from "../../assets/ezt/mobile.jpg";
+
 import PLP from "../../assets/rimowa/rimowa_plp.gif";
 import Purchase from "../../assets/rimowa/rimowa_purchase.gif";
 
@@ -25,7 +21,7 @@ const Rimowa: FC<Props> = () => {
     <Wrapper>
       <Logo>J</Logo>
       <Section>
-        <div className="col1">
+        <div className="col1 hero">
           <div className="sub">
             <div
               style={{ marginTop: "1.125em", cursor: "pointer" }}
@@ -43,14 +39,6 @@ const Rimowa: FC<Props> = () => {
             developers. The goal was to create a seamless checkout flow.
           </p>
           <div className="btn">
-            {/* <div>
-              <a
-                target="_blank"
-                href="https://apps.apple.com/us/app/ez-texting-messaging-app/id1465358979"
-              >
-                Check out the site
-              </a>
-            </div> */}
             <div>
               <a
                 target="_blank"
@@ -261,10 +249,14 @@ const Section = styled.section`
 
   @media (max-width: 950px) {
     flex-direction: column;
-    padding: 4em;
+    padding: 2.5em;
 
     .col1 {
       max-width: 100%;
+    }
+
+    .hero {
+      padding-top: 0.875em;
     }
 
     .sub {
@@ -284,6 +276,14 @@ const Section = styled.section`
         height: 1px;
         transform: translate(0.5em, -0.25em);
         background-color: #ff7382;
+      }
+    }
+
+    .media {
+      img {
+        width: 100%;
+        object-fit: cover;
+        margin: 1em 0;
       }
     }
   }

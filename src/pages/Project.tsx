@@ -18,7 +18,7 @@ const Project: FC<Props> = () => {
   return (
     <Container>
       <Header>
-        <h1>Things I've worked on</h1>
+        <h1 className="header">Things I've worked on</h1>
         <p className="italic">
           * Clone projects are NOT tutorial follow along. I chose projects
           carefully to get exposure on some of the best products out there and I
@@ -101,13 +101,20 @@ const Container = styled.div`
 const Header = styled.div`
   margin-bottom: 4em;
 
-  h1 {
+  .header {
     margin-bottom: 0.5em;
   }
 
   .italic {
     font-size: 1rem;
     font-style: italic;
+  }
+
+  @media (max-width: 950px) {
+    .header {
+      font-size: 2.5rem;
+      line-height: 2.75rem;
+    }
   }
 `;
 

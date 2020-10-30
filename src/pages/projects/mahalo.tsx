@@ -22,7 +22,7 @@ const Mahalo: FC<Props> = () => {
         <Logo>J</Logo>
       </Link>
       <Section>
-        <div className="col1">
+        <div className="col1 hero">
           <div className="sub">
             <div
               style={{ marginTop: "1.125em", cursor: "pointer" }}
@@ -158,10 +158,14 @@ const Section = styled.section`
 
   @media (max-width: 950px) {
     flex-direction: column;
-    padding: 4em;
+    padding: 2.5em;
 
     .col1 {
       max-width: 100%;
+    }
+
+    .hero {
+      padding-top: 0.875em;
     }
 
     .sub {
@@ -181,6 +185,13 @@ const Section = styled.section`
         height: 1px;
         transform: translate(0.5em, -0.25em);
         background-color: #ff7382;
+      }
+    }
+    .media {
+      img {
+        width: 100%;
+        object-fit: cover;
+        margin: 1em 0;
       }
     }
   }

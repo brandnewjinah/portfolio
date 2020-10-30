@@ -8,8 +8,8 @@ interface Props {}
 const About: FC<Props> = () => {
   return (
     <Container>
-      <h1>Front-end Developer</h1>
-      <h1>& UX/UI Designer</h1>
+      <h1 className="header">Front-end Developer</h1>
+      <h1 className="header">& UX/UI Designer</h1>
       <p className="about">
         My name is Jinah Lee and I'm a front-end developer with UX/UI design
         background. I enjoy solving user problems and translating the solutions
@@ -20,7 +20,7 @@ const About: FC<Props> = () => {
 };
 
 const Container = styled.div`
-  h1 {
+  .header {
     margin-bottom: 0.125em;
 
     &:first-of-type {
@@ -40,6 +40,13 @@ const Container = styled.div`
     letter-spacing: 0.05rem;
     color: #6b6565;
     margin: 1.5em 0;
+  }
+
+  @media (max-width: 950px) {
+    .header {
+      font-size: 2.5rem;
+      line-height: 2.75rem;
+    }
   }
 `;
 
