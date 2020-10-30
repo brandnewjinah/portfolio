@@ -14,7 +14,7 @@ import Mobile from "../../assets/ezt/mobile.jpg";
 
 interface Props {}
 
-const Uicomp: FC<Props> = () => {
+const EZText: FC<Props> = () => {
   let history = useHistory();
   return (
     <Wrapper>
@@ -77,9 +77,10 @@ const Uicomp: FC<Props> = () => {
         <div className="col2">
           <div>
             <p>
-              Friendly interface intimindating data easy to grasp, easy to take
-              action. handhold take action. introduce more solutions. businesses
-              can easily view their performance
+              The reporting sectino had enterprise level data that could be
+              intimidating to small business owners. The goal was to create
+              friendly interface so that customers take actions easily. Business
+              goal was to introduce more solutions.
             </p>
             <img src={Report} alt="" />
             <img src={Report2} alt="" />
@@ -95,8 +96,11 @@ const Uicomp: FC<Props> = () => {
         <div className="col2">
           <div>
             <p>
-              high traffic features, easy to send receive messages, respond to
-              customer questions on the go
+              In order to increase engagmement level with the producrt, it was
+              necessary to create a mobile app so that business owners could
+              easily to send receive messages, and respond to customer questions
+              on the go. I was involved in the entire design process from
+              defining to UI design.
             </p>
             <img src={Mobile} alt="" />
           </div>
@@ -241,4 +245,4 @@ const Section = styled.section`
   }
 `;
 
-export default Uicomp;
+export default EZText;

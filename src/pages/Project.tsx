@@ -32,7 +32,10 @@ const Project: FC<Props> = () => {
           overline="Web Development"
           color="#9dbbad"
         >
-          <p>Rimowa.com is an e-commerce site for luxury travel gears.</p>
+          <p>
+            Rimowa.com is an e-commerce site for luxury travel gears. I cloned
+            this site with the emphasis on seamless checkout flow.
+          </p>
         </List>
       </Link>
       <Link to="/abbapp">
@@ -42,7 +45,10 @@ const Project: FC<Props> = () => {
           overline="Mobile Development"
           color="#9dbbad"
         >
-          <p>Airbnb App clone project using React Native.</p>
+          <p>
+            Airbnb App clone project using React Native. This was a solo project
+            with emphasis on UI components and live chat feature.
+          </p>
         </List>
       </Link>
       <Link to="/uicomp">
@@ -52,7 +58,10 @@ const Project: FC<Props> = () => {
           overline="Mobile Development"
           color="#9dbbad"
         >
-          <p>Custom UI components for React Native.</p>
+          <p>
+            Custom UI components for React Native. I'm continuously buidng the
+            components and hope to share it as open-source.
+          </p>
         </List>
       </Link>
       <Link to="/abb">
@@ -62,7 +71,10 @@ const Project: FC<Props> = () => {
           overline="Web Development"
           color="#9dbbad"
         >
-          <p>Airbnb.co.kr site clone using React.</p>
+          <p>
+            Airbnb.co.kr site clone using React with emphasis on list/map view
+            and filtering.
+          </p>
         </List>
       </Link>
       <Link to="/uxprojects">
