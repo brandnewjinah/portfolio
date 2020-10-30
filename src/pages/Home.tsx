@@ -50,7 +50,7 @@ const Home: FC<Props> = () => {
           </div>
         </Section>
       </div>
-      <div style={{ backgroundColor: "#e26420", color: "#ffbb03" }}>
+      <div style={{ backgroundColor: "#afc157", color: "#f5e284" }}>
         <Section>
           <div className="col1">
             <div className="sub">
