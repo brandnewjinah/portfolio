@@ -22,7 +22,7 @@ import Mahalo from "./pages/projects/mahalo";
 const Routes = () => {
   return (
     <Router>
-      <ResMenu />
+      {/* <ResMenu /> */}
       <Switch>
         <Route exact path="/" component={Home} />
         <Route exact path="/uxprojects" component={UXProjects} />

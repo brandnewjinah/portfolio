@@ -118,7 +118,7 @@ const Section = styled.section`
 
   @media (max-width: 950px) {
     flex-direction: column;
-    padding: 4em;
+    padding: 2em;
 
     .col1 {
       max-width: 100%;
@@ -132,7 +132,7 @@ const Section = styled.section`
     .email {
       font-family: "Raleway", sans-serif;
       font-weight: 700;
-      font-size: 1.875rem;
+      font-size: 1.5rem;
     }
     h6 {
       &:before {
