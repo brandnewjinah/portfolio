@@ -59,7 +59,7 @@ const Project: FC<Props> = () => {
           color="#9dbbad"
         >
           <p>
-            Custom UI components for React Native. I'm continuously buidng the
+            Custom UI components for React Native. I'm continuously building the
             components and hope to share it as open-source.
           </p>
         </List>

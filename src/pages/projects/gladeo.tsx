@@ -57,7 +57,7 @@ const Gladeo: FC<Props> = () => {
         <div className="col2">
           <div>
             <p>
-              Gladeo needed on space where students and contributors could
+              Gladeo needed one space where students and contributors could
               connect. This meant creating a new platform whi knowledge sharing
               capability, as well as merging contents from two existing sites.
             </p>
