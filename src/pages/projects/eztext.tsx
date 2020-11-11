@@ -77,7 +77,7 @@ const EZText: FC<Props> = () => {
         <div className="col2">
           <div>
             <p>
-              The reporting sectino had enterprise level data that could be
+              The reporting section had enterprise level data that could be
               intimidating to small business owners. The goal was to create
               friendly interface so that customers take actions easily. Business
               goal was to introduce more solutions.
@@ -96,11 +96,11 @@ const EZText: FC<Props> = () => {
         <div className="col2">
           <div>
             <p>
-              In order to increase engagmement level with the producrt, it was
+              To increase the engagement level with the product, it was
               necessary to create a mobile app so that business owners could
-              easily to send receive messages, and respond to customer questions
+              easily send and receive messages and respond to customer questions
               on the go. I was involved in the entire design process from
-              defining to UI design.
+              defining the problem to UI design.
             </p>
             <img src={Mobile} alt="" />
           </div>
