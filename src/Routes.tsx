@@ -18,6 +18,7 @@ import Gladeo from "./pages/projects/gladeo";
 import Beauty from "./pages/projects/beautybd";
 import Revolve from "./pages/projects/revolve";
 import Mahalo from "./pages/projects/mahalo";
+import Movies from "./pages/projects/movies";
 
 const Routes = () => {
   return (
@@ -27,6 +28,7 @@ const Routes = () => {
         <Route exact path="/" component={Home} />
         <Route exact path="/uxprojects" component={UXProjects} />
         <Route exact path="/uicomp" component={UIcomp} />
+        <Route exact path="/movies" component={Movies} />
         <Route exact path="/rimowa" component={Rimowa} />
         <Route exact path="/abbapp" component={AirbnbM} />
         <Route exact path="/abb" component={AirbnbW} />

@@ -11,6 +11,7 @@ import UIComp from "../assets/thumb/uicomp_thumb.jpg";
 import ABBW from "../assets/thumb/abbw_thumb.jpg";
 import Rimowa from "../assets/thumb/rimowa_thumb.jpg";
 import UX from "../assets/thumb/ux_thumb.jpg";
+import Movies from "../assets/thumb/movies_thumb.jpg";
 
 interface Props {}
 
@@ -25,6 +26,19 @@ const Project: FC<Props> = () => {
           struggled to solve the problems :)
         </p>
       </Header>
+      <Link to="/movies">
+        <List
+          img={Movies}
+          title="Movie Ratings"
+          overline="Web Development"
+          color="#9dbbad"
+        >
+          <p>
+            Rimowa.com is an e-commerce site for luxury travel gears. I cloned
+            this site with the emphasis on seamless checkout flow.
+          </p>
+        </List>
+      </Link>
       <Link to="/rimowa">
         <List
           img={Rimowa}
