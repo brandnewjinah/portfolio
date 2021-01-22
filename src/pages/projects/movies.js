@@ -67,7 +67,7 @@ const Rimowa = () => {
             </p>
             <div className="media">
               <img
-                src="https://brandnewjinah.github.io/static/rimowa_register-5f1b3c23bf5ec7d209a91534badcabc9.gif"
+                src="https://user-images.githubusercontent.com/44072645/105446775-acf2b800-5c27-11eb-8bba-046842fdfc66.gif"
                 alt=""
               />
             </div>
@@ -87,7 +87,10 @@ const Rimowa = () => {
               liked the movie for better recommendatiions.
             </p>
             <div className="media">
-              <img src={PLP} alt="" />
+              <img
+                src="https://user-images.githubusercontent.com/44072645/105446826-c8f65980-5c27-11eb-9e25-11352b26acaf.gif"
+                alt=""
+              />
             </div>
           </div>
         </div>
@@ -105,7 +108,10 @@ const Rimowa = () => {
               genres from your liked movies and saved keywords.
             </p>
             <div className="media">
-              <img src={Purchase} alt="" />
+              <img
+                src="https://user-images.githubusercontent.com/44072645/105446950-170b5d00-5c28-11eb-9f0e-905ebf24bc7e.gif"
+                alt=""
+              />
             </div>
           </div>
         </div>
@@ -125,7 +131,7 @@ const Rimowa = () => {
             </p>
             <div className="media">
               <img
-                src="https://brandnewjinah.github.io/static/rimowa_homepage-f8df51febd314b4755d06442965a4796.gif"
+                src="https://user-images.githubusercontent.com/44072645/105447011-2be7f080-5c28-11eb-849f-b390a8edfc14.gif"
                 alt=""
               />
             </div>
