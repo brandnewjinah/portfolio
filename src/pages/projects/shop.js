@@ -10,7 +10,7 @@ import { Back } from "../../assets/Icons";
 import PLP from "../../assets/rimowa/rimowa_plp.gif";
 import Purchase from "../../assets/rimowa/rimowa_purchase.gif";
 
-const Rimowa = () => {
+const Shop = () => {
   let history = useHistory();
   useEffect(() => {
     window.scrollTo(0, 0);
@@ -32,22 +32,25 @@ const Rimowa = () => {
           </div>
         </div>
         <div className="col2">
-          <h1>MOVIE RATINGS</h1>
+          <h1>SNACK SHOP</h1>
           <p className="header">
-            I created a site where you can rate movies you've watched and get
-            personalized profile and recommendations based on your answer. I
-            used TMDB api to make requests and redux to store answers.
+            I created a site where you can shop for snacks. There's a customer
+            facing route where users can browse and order products, and a admin
+            facing route where a user can manange products, orders and users. I
+            used React and Redux for frontend and node.js for backend. Backend
+            is still work in progress, and the live demo is for frontend for
+            now, but you can check out my code in my github.
           </p>
           <div className="btn">
             <div>
-              <a target="_blank" href="https://mymovieprofile.netlify.app/">
+              <a target="_blank" href="http://myshopdemo.netlify.app/">
                 Live
               </a>
             </div>
             <div>
               <a
                 target="_blank"
-                href="https://github.com/brandnewjinah/mymovies"
+                href="https://github.com/brandnewjinah/ecommerce"
               >
                 Source Code
               </a>
@@ -58,18 +61,41 @@ const Rimowa = () => {
       <Section>
         <div className="col1">
           <div className="sub">
-            <h6>Profile</h6>
+            <h6>Browse</h6>
           </div>
         </div>
         <div className="col2">
           <div>
             <p>
-              First time users can start rating movies they've watched and get a
-              personalized profile page.
+              As a customer, you can browse products categorized by main
+              categories and sub-categories. Similar items on the detail page
+              are pulled from the same sub-category.
             </p>
             <div className="media">
               <img
-                src="https://user-images.githubusercontent.com/44072645/105446775-acf2b800-5c27-11eb-8bba-046842fdfc66.gif"
+                src="https://user-images.githubusercontent.com/44072645/106151996-cf0d9e00-6131-11eb-96db-99c283978627.gif"
+                alt=""
+              />
+            </div>
+          </div>
+        </div>
+      </Section>
+
+      <Section>
+        <div className="col1">
+          <div className="sub">
+            <h6>Cart / Checkout</h6>
+          </div>
+        </div>
+        <div className="col2">
+          <div>
+            <p>
+              You can edit quantity, delete item and checkout items from your
+              cart. For the demo purpose, it's all controlled by redux.
+            </p>
+            <div className="media">
+              <img
+                src="https://user-images.githubusercontent.com/44072645/106151169-ee57fb80-6130-11eb-9d8c-24c8bcdbdc4e.gif"
                 alt=""
               />
             </div>
@@ -79,61 +105,18 @@ const Rimowa = () => {
       <Section>
         <div className="col1">
           <div className="sub">
-            <h6>Keywords</h6>
+            <h6>CMS</h6>
           </div>
         </div>
         <div className="col2">
           <div>
             <p>
-              On the details page, you can save keywords that describe why you
-              liked the movie for better recommendatiions.
+              As an admin, you can track sales, manage products, view customer
+              orders and customer information.
             </p>
             <div className="media">
               <img
-                src="https://user-images.githubusercontent.com/44072645/105446826-c8f65980-5c27-11eb-9e25-11352b26acaf.gif"
-                alt=""
-              />
-            </div>
-          </div>
-        </div>
-      </Section>
-      <Section>
-        <div className="col1">
-          <div className="sub">
-            <h6>Recommendations</h6>
-          </div>
-        </div>
-        <div className="col2">
-          <div>
-            <p>
-              This page shows recommended movies base on your liked movie,
-              genres from your liked movies and saved keywords.
-            </p>
-            <div className="media">
-              <img
-                src="https://user-images.githubusercontent.com/44072645/105446950-170b5d00-5c28-11eb-9f0e-905ebf24bc7e.gif"
-                alt=""
-              />
-            </div>
-          </div>
-        </div>
-      </Section>
-      <Section>
-        <div className="col1">
-          <div className="sub">
-            <h6>Rate more</h6>
-          </div>
-        </div>
-        <div className="col2">
-          <div>
-            <p>
-              You can always rate more movies for better recommendation results.
-              You can sort by different criteria and exclude certain genres from
-              showing up.
-            </p>
-            <div className="media">
-              <img
-                src="https://user-images.githubusercontent.com/44072645/105447011-2be7f080-5c28-11eb-849f-b390a8edfc14.gif"
+                src="https://user-images.githubusercontent.com/44072645/106151583-5b6b9100-6131-11eb-85d4-1e81ee260b25.gif"
                 alt=""
               />
             </div>
@@ -426,4 +409,4 @@ const Section = styled.section`
   }
 `;
 
-export default Rimowa;
+export default Shop;

@@ -12,6 +12,7 @@ import ABBW from "../assets/thumb/abbw_thumb.jpg";
 import Rimowa from "../assets/thumb/rimowa_thumb.jpg";
 import UX from "../assets/thumb/ux_thumb.jpg";
 import Movies from "../assets/thumb/movies_thumb.jpg";
+import Shop from "../assets/thumb/shop_thumb.jpg";
 
 interface Props {}
 
@@ -26,6 +27,19 @@ const Project: FC<Props> = () => {
           struggled to solve the problems :)
         </p>
       </Header>
+      <Link to="/shop">
+        <List
+          img={Shop}
+          title="Ecommerce"
+          overline="Web Development"
+          color="#9dbbad"
+        >
+          <p>
+            Ecommerce site for snacks focused on customer shopping experience
+            and admin product management.
+          </p>
+        </List>
+      </Link>
       <Link to="/movies">
         <List
           img={Movies}
@@ -34,8 +48,21 @@ const Project: FC<Props> = () => {
           color="#9dbbad"
         >
           <p>
-            Rimowa.com is an e-commerce site for luxury travel gears. I cloned
-            this site with the emphasis on seamless checkout flow.
+            Movie ratings app where you can rate movies you've watched and get
+            personalized recommendations.
+          </p>
+        </List>
+      </Link>
+      <Link to="/uicomp">
+        <List
+          img={UIComp}
+          title="UI Components"
+          overline="Mobile Development"
+          color="#9dbbad"
+        >
+          <p>
+            Custom UI components for React Native. I'm continuously building the
+            components and hope to share it as open-source.
           </p>
         </List>
       </Link>
@@ -62,19 +89,6 @@ const Project: FC<Props> = () => {
           <p>
             Airbnb App clone project using React Native. This was a solo project
             with emphasis on UI components and live chat feature.
-          </p>
-        </List>
-      </Link>
-      <Link to="/uicomp">
-        <List
-          img={UIComp}
-          title="UI Components"
-          overline="Mobile Development"
-          color="#9dbbad"
-        >
-          <p>
-            Custom UI components for React Native. I'm continuously building the
-            components and hope to share it as open-source.
           </p>
         </List>
       </Link>
