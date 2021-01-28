@@ -8,6 +8,7 @@ import Project from "./Project";
 
 //import syles and assets
 import styled from "styled-components";
+import { Github, Linkedin } from "../assets/Icons";
 
 interface Props {}
 
@@ -59,6 +60,21 @@ const Home: FC<Props> = () => {
           </div>
           <div className="col2">
             <div className="email">brandnewjinah@gmail.com</div>
+            <div className="links">
+              <div>
+                <a href="https://github.com/brandnewjinah" target="_blank">
+                  <Github width="20" height="20" color="#f5e284" stroke="2" />{" "}
+                </a>
+              </div>
+              <div>
+                <a
+                  href="https://www.linkedin.com/in/jinah-lee-1105b75/"
+                  target="_blank"
+                >
+                  <Linkedin width="20" height="20" color="#f5e284" stroke="2" />
+                </a>
+              </div>
+            </div>
           </div>
         </Section>
       </div>
@@ -100,6 +116,17 @@ const Section = styled.section`
     font-weight: 700;
     font-size: 3.25rem;
     padding-top: 0.25em;
+  }
+
+  .links {
+    display: flex;
+    font-weight: 500;
+    font-size: 1.5rem;
+    padding-top: 1.25em;
+
+    div {
+      margin-right: 0.5em;
+    }
   }
 
   h6 {
@@ -147,6 +174,11 @@ const Section = styled.section`
       font-weight: 700;
       font-size: 1.5rem;
     }
+
+    .links {
+      padding-top: 0.5em;
+    }
+
     h6 {
       &:before {
         display: none;
