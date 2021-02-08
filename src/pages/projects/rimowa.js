@@ -68,7 +68,7 @@ const Rimowa = () => {
             <div>
               <p className="body">
                 As a part of the bootcamp projects, I cloned this site along
-                with 2 front-end devlopers and 2 back-end developers. The goal
+                with 2 front-end developers and 2 back-end developers. The goal
                 was to create a seamless checkout flow.
               </p>
             </div>

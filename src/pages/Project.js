@@ -19,11 +19,11 @@ const Project = () => {
     <Container>
       <Header>
         <h1 className="header">Things I've worked on</h1>
-        <p className="italic">
+        {/* <p className="italic">
           * Clone projects are NOT tutorial follow along. I chose projects
           carefully to get exposure on some of the best products out there and I
           struggled to solve the problems :)
-        </p>
+        </p> */}
       </Header>
 
       <Link to="/movies">
@@ -42,12 +42,12 @@ const Project = () => {
       <Link to="/shop">
         <List
           img={Shop}
-          title="Ecommerce"
+          title="E-Commerce"
           overline="Web Development"
           color="#9dbbad"
         >
           <p>
-            Ecommerce site for snacks focused on customer shopping experience
+            E-commerce site for snacks focused on customer shopping experience
             and admin product management.
           </p>
         </List>
