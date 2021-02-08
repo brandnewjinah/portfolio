@@ -1,11 +1,9 @@
-import React, { FC } from "react";
+import React from "react";
 
 //import styled components
 import styled from "styled-components";
 
-interface Props {}
-
-const Layout: FC<Props> = ({ children }) => {
+const Layout = ({ children }) => {
   return (
     <Wrapper>
       <Container>{children}</Container>

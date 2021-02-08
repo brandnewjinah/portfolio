@@ -1,4 +1,4 @@
-import React, { FC } from "react";
+import React from "react";
 
 //import components
 import Accordion from "../components/accordion";
@@ -8,9 +8,7 @@ import UXtools from "../components/uxtools";
 //import syles and assets
 import styled from "styled-components";
 
-interface Props {}
-
-const Skill: FC<Props> = () => {
+const Skill = () => {
   return (
     <Container>
       <Accordion title="Front-End Development">

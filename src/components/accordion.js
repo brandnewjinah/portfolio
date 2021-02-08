@@ -46,6 +46,7 @@ const Container = styled.section`
     display: flex;
     justify-content: space-between;
     align-items: center;
+    cursor: pointer;
   }
 
   @media (max-width: 950px) {

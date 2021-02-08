@@ -1,21 +1,19 @@
-import React, { FC } from "react";
+import React from "react";
 
 //import syles and assets
 import styled from "styled-components";
 import * as Icons from "../assets/Icons";
 
-interface Props {}
-
-const UXTools: FC<Props> = () => {
+const UXTools = () => {
   return (
     <Container>
-      <div>
+      <p>
         I have been working as UX/UI designer for over 10 years in industries
         like e-commerce, SaaS, marketing, technology, and non-profit
         organizations.
-      </div>
+      </p>
       <div style={{ marginTop: `1.5em` }}>
-        I'm comfortable using XD, Figma and Sketch.
+        <p>I'm comfortable using Figma, XD and Sketch.</p>
       </div>
       <div className="tools">
         {/* <Tool>
@@ -40,6 +38,12 @@ const UXTools: FC<Props> = () => {
 const Container = styled.div`
   font-size: 1rem;
   padding: 1em 0;
+
+  p {
+    font-size: 0.95rem;
+    font-weight: 400;
+    letter-spacing: 0.05rem;
+  }
 `;
 
 const Tool = styled.div`

@@ -9,13 +9,17 @@ import styled from "styled-components";
 //import syles and assets
 import Colors from "../../components/Colors";
 import { ArrowUpRight } from "../../assets/Icons";
-import Flow from "../../assets/movies/movies_flow.jpg";
+import Cover from "../../assets/revolve/cover.jpg";
+import Evaluation from "../../assets/revolve/evaluation.jpg";
+import Priority from "../../assets/revolve/priority.jpg";
+import Sitemap from "../../assets/revolve/sitemap.jpg";
+import Journey from "../../assets/revolve/journey.jpg";
+import Wire from "../../assets/revolve/wireframe.jpg";
 
-const Movie = () => {
+const Revolve = () => {
   useLayoutEffect(() => {
     window.scrollTo(0, 0);
   });
-
   return (
     <Wrapper>
       <Link to="/">
@@ -24,33 +28,19 @@ const Movie = () => {
       <Main>
         <Section>
           <div className="three">
-            <div className="header">Movie Ratings</div>
+            <div className="header">Revolve</div>
             {/* <div className="overline">/ Web Development</div> */}
           </div>
           <div className="seven">
             <div className="description">
-              Rate movies you've watched, get a personalized movie profile and
-              get recommendations.
+              Revolve is a fashion e-commerce site that's targeted for
+              millennials and gen z. I was involved in redesign of the entire
+              website.
             </div>
-
             <div className="btncontainer">
-              <a target="_blank" href="https://mymovieprofile.netlify.app/">
+              <a target="_blank" href="https://www.revolve.com">
                 <div className="btn">
-                  <div>LIVE</div>
-                  <ArrowUpRight
-                    width="14"
-                    height="14"
-                    color="#000"
-                    stroke="2"
-                  />
-                </div>
-              </a>
-              <a
-                target="_blank"
-                href="https://github.com/brandnewjinah/mymovies"
-              >
-                <div className="btn">
-                  <div>GITHUB</div>
+                  <div>LIVE SITE</div>
                   <ArrowUpRight
                     width="14"
                     height="14"
@@ -60,130 +50,83 @@ const Movie = () => {
                 </div>
               </a>
             </div>
+            <div className="media">
+              <img src={Cover} alt="" />
+            </div>
           </div>
         </Section>
+
         <Section>
           <div className="three">
-            <div className="sub">Stacks</div>
+            <div className="sub">Role</div>
           </div>
           <div className="seven">
             <div>
               <p className="body">
-                React, Redux, Prop Types, Styled-Components
+                As a senior UX designer, I was heavily involved with stakeholder
+                meetings, strategic planning sessions, UX process and QA testing
+                sessions.
               </p>
             </div>
           </div>
         </Section>
         <Section>
           <div className="three">
-            <div className="sub">Why</div>
+            <div className="sub">Discover</div>
           </div>
           <div className="seven">
             <div>
               <p className="body">
-                I wanted to understand myself better by analyzing my movie
-                preferences. Then, I wanted to use the data to help me make
-                decision with what to watch on streaming apps.
-              </p>
-            </div>
-          </div>
-        </Section>
-        <Section>
-          <div className="three">
-            <div className="sub">Process</div>
-          </div>
-          <div className="seven">
-            <div>
-              <p className="body">
-                I created a user flow first to organize structure, main events
-                and routes.
+                I analyzed business and customer needs throguh interviews and
+                surveys. I set up priority and goals for the project, conducted
+                heuristic evaluation to inspect current issues and compiled
+                competitive reserach to present the industry standard.
               </p>
               <div className="media">
-                <a href="https://user-images.githubusercontent.com/44072645/107153364-f75f7e80-6921-11eb-9804-4c5746adef68.jpg">
-                  <img
-                    src="https://user-images.githubusercontent.com/44072645/107153364-f75f7e80-6921-11eb-9804-4c5746adef68.jpg"
-                    alt=""
-                  />
-                </a>
+                <img src={Evaluation} alt="" />
+              </div>
+              <div className="media">
+                <img src={Priority} alt="" />
               </div>
             </div>
           </div>
         </Section>
         <Section>
           <div className="three">
-            <div className="sub">Rate</div>
+            <div className="sub">Define</div>
           </div>
           <div className="seven">
             <div>
               <p className="body">
-                First time user is asked to rate at least 10 movies to get
-                initial profile and recommendations. Movies are fetched from the
-                TMDB api, sorted by the most rated movies.
+                Some of the deliverables I produced during this phase include
+                user experience map and site map. The user experience map
+                covered every step of customer journey from shopping to checkout
+                to post purchase. The sitemap not only covered the structure but
+                also the flow so that the relationship between contents were
+                more visible.
               </p>
               <div className="media">
-                <img
-                  src="https://user-images.githubusercontent.com/44072645/107152550-638bb380-691d-11eb-94a0-22bd4fc2b110.gif"
-                  alt=""
-                />
+                <img src={Journey} alt="" />
+              </div>
+              <div className="media">
+                <img src={Sitemap} alt="" />
               </div>
             </div>
           </div>
         </Section>
         <Section>
           <div className="three">
-            <div className="sub">Profile</div>
+            <div className="sub">Design</div>
           </div>
           <div className="seven">
             <div>
               <p className="body">
-                Then a user can check out personalized profile, analyzed by
-                liked and disliked movies, liked genres and directors and
-                languages watched in.
+                Then I created high fidelity wireframes for almost every singe
+                page and set up prototype so that all the department could grasp
+                good understanding of the design.
               </p>
               <div className="media">
-                <img
-                  src="https://user-images.githubusercontent.com/44072645/107152871-47891180-691f-11eb-9891-421487b29517.gif"
-                  alt=""
-                />
-              </div>
-            </div>
-          </div>
-        </Section>
-        <Section>
-          <div className="three">
-            <div className="sub">Keyword</div>
-          </div>
-          <div className="seven">
-            <div>
-              <p className="body">
-                On details page, user can save keywords that describe why you
-                liked the movie. It will be included in the profile and also be
-                used to give better recommendatiions.
-              </p>
-              <div className="media">
-                <img
-                  src="https://user-images.githubusercontent.com/44072645/107153183-faa63a80-6920-11eb-8999-e3ed7fce8eec.gif"
-                  alt=""
-                />
-              </div>
-            </div>
-          </div>
-        </Section>
-        <Section>
-          <div className="three">
-            <div className="sub">Recommendations</div>
-          </div>
-          <div className="seven">
-            <div>
-              <p className="body">
-                Movies are recommended based on users liked moives, liked genres
-                and liked keywords.
-              </p>
-              <div className="media">
-                <img
-                  src="https://user-images.githubusercontent.com/44072645/107153305-a3ed3080-6921-11eb-877d-55e84ec09f51.gif"
-                  alt=""
-                />
+                <img src={Wire} alt="" />
               </div>
             </div>
           </div>
@@ -296,7 +239,7 @@ const Section = styled(Flex)`
     /* background-color: #fafafa; */
     display: flex;
     justify-content: center;
-    padding: 1em 0;
+    padding: 0;
     margin: 1em 0;
 
     img {
@@ -325,4 +268,4 @@ const Section = styled(Flex)`
   }
 `;
 
-export default Movie;
+export default Revolve;

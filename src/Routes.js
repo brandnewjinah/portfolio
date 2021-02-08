@@ -1,9 +1,6 @@
 import React from "react";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 
-//import components
-import ResMenu from "./components/header/ResMenu";
-
 //import pages
 import Home from "./pages/Home";
 import UXProjects from "./pages/UXProjects";
@@ -24,7 +21,6 @@ import Shop from "./pages/projects/shop";
 const Routes = () => {
   return (
     <Router>
-      {/* <ResMenu /> */}
       <Switch>
         <Route exact path="/" component={Home} />
         <Route exact path="/uxprojects" component={UXProjects} />

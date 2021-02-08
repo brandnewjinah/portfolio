@@ -9,13 +9,11 @@ import styled from "styled-components";
 //import syles and assets
 import Colors from "../../components/Colors";
 import { ArrowUpRight } from "../../assets/Icons";
-import Flow from "../../assets/movies/movies_flow.jpg";
 
-const Movie = () => {
+const AirbnbApp = () => {
   useLayoutEffect(() => {
     window.scrollTo(0, 0);
   });
-
   return (
     <Wrapper>
       <Link to="/">
@@ -24,30 +22,16 @@ const Movie = () => {
       <Main>
         <Section>
           <div className="three">
-            <div className="header">Movie Ratings</div>
+            <div className="header">Airbnb App Clone</div>
             {/* <div className="overline">/ Web Development</div> */}
           </div>
           <div className="seven">
-            <div className="description">
-              Rate movies you've watched, get a personalized movie profile and
-              get recommendations.
-            </div>
+            <div className="description">React Native clone project.</div>
 
             <div className="btncontainer">
-              <a target="_blank" href="https://mymovieprofile.netlify.app/">
-                <div className="btn">
-                  <div>LIVE</div>
-                  <ArrowUpRight
-                    width="14"
-                    height="14"
-                    color="#000"
-                    stroke="2"
-                  />
-                </div>
-              </a>
               <a
                 target="_blank"
-                href="https://github.com/brandnewjinah/mymovies"
+                href="https://github.com/brandnewjinah/react-native-airbnb-clone"
               >
                 <div className="btn">
                   <div>GITHUB</div>
@@ -68,9 +52,7 @@ const Movie = () => {
           </div>
           <div className="seven">
             <div>
-              <p className="body">
-                React, Redux, Prop Types, Styled-Components
-              </p>
+              <p className="body">React, Redux, Styled-Components</p>
             </div>
           </div>
         </Section>
@@ -81,48 +63,44 @@ const Movie = () => {
           <div className="seven">
             <div>
               <p className="body">
-                I wanted to understand myself better by analyzing my movie
-                preferences. Then, I wanted to use the data to help me make
-                decision with what to watch on streaming apps.
+                After completing the Airbnb.com site clone project, I wanted to
+                recreate the experience on moble using React Native.
               </p>
             </div>
           </div>
         </Section>
         <Section>
           <div className="three">
-            <div className="sub">Process</div>
+            <div className="sub">Demo</div>
           </div>
           <div className="seven">
-            <div>
-              <p className="body">
-                I created a user flow first to organize structure, main events
-                and routes.
-              </p>
-              <div className="media">
-                <a href="https://user-images.githubusercontent.com/44072645/107153364-f75f7e80-6921-11eb-9804-4c5746adef68.jpg">
-                  <img
-                    src="https://user-images.githubusercontent.com/44072645/107153364-f75f7e80-6921-11eb-9804-4c5746adef68.jpg"
-                    alt=""
-                  />
-                </a>
-              </div>
+            <div className="media">
+              <iframe
+                title="rimowa"
+                width="100%"
+                height="390"
+                src="https://www.youtube.com/embed/RHxPceOgMB0"
+                frameBorder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowFullScreen
+              ></iframe>
             </div>
           </div>
         </Section>
         <Section>
           <div className="three">
-            <div className="sub">Rate</div>
+            <div className="sub">Signup / Login</div>
           </div>
           <div className="seven">
             <div>
               <p className="body">
-                First time user is asked to rate at least 10 movies to get
-                initial profile and recommendations. Movies are fetched from the
-                TMDB api, sorted by the most rated movies.
+                I created reusable input, buttom and form components. I also
+                used popular libraries such as Yup and Joi for client side error
+                handling.
               </p>
               <div className="media">
                 <img
-                  src="https://user-images.githubusercontent.com/44072645/107152550-638bb380-691d-11eb-94a0-22bd4fc2b110.gif"
+                  src="https://brandnewjinah.github.io/static/airapp_login-4de70ac021667d9d214211454730b74a.gif"
                   alt=""
                 />
               </div>
@@ -131,18 +109,39 @@ const Movie = () => {
         </Section>
         <Section>
           <div className="three">
-            <div className="sub">Profile</div>
+            <div className="sub">Homepage</div>
           </div>
           <div className="seven">
             <div>
               <p className="body">
-                Then a user can check out personalized profile, analyzed by
-                liked and disliked movies, liked genres and directors and
-                languages watched in.
+                I created search filter funtionality in which it filters results
+                as you type. I also implemented Wix calendar picker libaray and
+                customized it to fit the Airbnb brand. I also created reusable
+                counter component and implemented Redux to store user choice.
               </p>
               <div className="media">
                 <img
-                  src="https://user-images.githubusercontent.com/44072645/107152871-47891180-691f-11eb-9891-421487b29517.gif"
+                  src="https://brandnewjinah.github.io/static/airapp_home-73b4e7e9f69003749879c920000d1f71.gif"
+                  alt=""
+                />
+              </div>
+            </div>
+          </div>
+        </Section>
+
+        <Section>
+          <div className="three">
+            <div className="sub">List and Details</div>
+          </div>
+          <div className="seven">
+            <div>
+              <p className="body">
+                I created reusable card component to display the search result.
+                I implemented Google Maps to show the results on the map.
+              </p>
+              <div className="media">
+                <img
+                  src="https://brandnewjinah.github.io/static/airapp_list-1cd69ea8644a3422719f5fcb7fd4ea20.gif"
                   alt=""
                 />
               </div>
@@ -151,18 +150,17 @@ const Movie = () => {
         </Section>
         <Section>
           <div className="three">
-            <div className="sub">Keyword</div>
+            <div className="sub">Host</div>
           </div>
           <div className="seven">
             <div>
               <p className="body">
-                On details page, user can save keywords that describe why you
-                liked the movie. It will be included in the profile and also be
-                used to give better recommendatiions.
+                I created the Host section where you can add your own place to
+                rent out. I enabled native ImagePicker and geolocation feature.
               </p>
               <div className="media">
                 <img
-                  src="https://user-images.githubusercontent.com/44072645/107153183-faa63a80-6920-11eb-8999-e3ed7fce8eec.gif"
+                  src="https://brandnewjinah.github.io/static/airapp_host-5173592478a19b2620273682837ab5a2.gif"
                   alt=""
                 />
               </div>
@@ -171,17 +169,17 @@ const Movie = () => {
         </Section>
         <Section>
           <div className="three">
-            <div className="sub">Recommendations</div>
+            <div className="sub">Messaging</div>
           </div>
           <div className="seven">
             <div>
               <p className="body">
-                Movies are recommended based on users liked moives, liked genres
-                and liked keywords.
+                I implemented socket.io to create socket connection. This
+                enabled live sending and receiving of messages.
               </p>
               <div className="media">
                 <img
-                  src="https://user-images.githubusercontent.com/44072645/107153305-a3ed3080-6921-11eb-877d-55e84ec09f51.gif"
+                  src="https://brandnewjinah.github.io/static/airapp_message-78ad756f725387b0c8a395e31dcde655.gif"
                   alt=""
                 />
               </div>
@@ -293,14 +291,14 @@ const Section = styled(Flex)`
 
   .media {
     width: 100%;
-    /* background-color: #fafafa; */
+    background-color: #fafafa;
     display: flex;
     justify-content: center;
-    padding: 1em 0;
+    padding: 3em 0;
     margin: 1em 0;
 
     img {
-      width: 100%;
+      max-width: 600px;
       object-fit: cover;
       margin: 1em 0;
     }
@@ -325,4 +323,4 @@ const Section = styled(Flex)`
   }
 `;
 
-export default Movie;
+export default AirbnbApp;

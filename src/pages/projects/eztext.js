@@ -9,13 +9,16 @@ import styled from "styled-components";
 //import syles and assets
 import Colors from "../../components/Colors";
 import { ArrowUpRight } from "../../assets/Icons";
-import Flow from "../../assets/movies/movies_flow.jpg";
+import Cover from "../../assets/ezt/cover.jpg";
+import Approach from "../../assets/ezt/approach.png";
+import Report from "../../assets/ezt/screen1.jpg";
+import Report2 from "../../assets/ezt/screen2.jpg";
+import Mobile from "../../assets/ezt/mobile.jpg";
 
-const Movie = () => {
+const EZText = () => {
   useLayoutEffect(() => {
     window.scrollTo(0, 0);
   });
-
   return (
     <Wrapper>
       <Link to="/">
@@ -24,33 +27,22 @@ const Movie = () => {
       <Main>
         <Section>
           <div className="three">
-            <div className="header">Movie Ratings</div>
+            <div className="header">EZ Texting</div>
             {/* <div className="overline">/ Web Development</div> */}
           </div>
           <div className="seven">
             <div className="description">
-              Rate movies you've watched, get a personalized movie profile and
-              get recommendations.
+              EZ Texting is a SaaS company that provides SMS marketing solutions
+              to businesses of all sizes.
             </div>
 
             <div className="btncontainer">
-              <a target="_blank" href="https://mymovieprofile.netlify.app/">
-                <div className="btn">
-                  <div>LIVE</div>
-                  <ArrowUpRight
-                    width="14"
-                    height="14"
-                    color="#000"
-                    stroke="2"
-                  />
-                </div>
-              </a>
               <a
                 target="_blank"
-                href="https://github.com/brandnewjinah/mymovies"
+                href="https://apps.apple.com/us/app/ez-texting-messaging-app/id1465358979"
               >
                 <div className="btn">
-                  <div>GITHUB</div>
+                  <div>APP STORE</div>
                   <ArrowUpRight
                     width="14"
                     height="14"
@@ -62,128 +54,72 @@ const Movie = () => {
             </div>
           </div>
         </Section>
+
         <Section>
           <div className="three">
-            <div className="sub">Stacks</div>
+            <div className="sub">Role</div>
           </div>
           <div className="seven">
             <div>
               <p className="body">
-                React, Redux, Prop Types, Styled-Components
+                My role was to create UX/UI design for the reporting system and
+                the brand new mobile app.
               </p>
             </div>
           </div>
         </Section>
         <Section>
           <div className="three">
-            <div className="sub">Why</div>
+            <div className="sub">Approach</div>
           </div>
           <div className="seven">
             <div>
               <p className="body">
-                I wanted to understand myself better by analyzing my movie
-                preferences. Then, I wanted to use the data to help me make
-                decision with what to watch on streaming apps.
-              </p>
-            </div>
-          </div>
-        </Section>
-        <Section>
-          <div className="three">
-            <div className="sub">Process</div>
-          </div>
-          <div className="seven">
-            <div>
-              <p className="body">
-                I created a user flow first to organize structure, main events
-                and routes.
+                The goal was to create an easy to use platform where customers
+                could actively engage in marketing their own businesses.
               </p>
               <div className="media">
-                <a href="https://user-images.githubusercontent.com/44072645/107153364-f75f7e80-6921-11eb-9804-4c5746adef68.jpg">
-                  <img
-                    src="https://user-images.githubusercontent.com/44072645/107153364-f75f7e80-6921-11eb-9804-4c5746adef68.jpg"
-                    alt=""
-                  />
-                </a>
+                <img src={Approach} alt="" />
               </div>
             </div>
           </div>
         </Section>
         <Section>
           <div className="three">
-            <div className="sub">Rate</div>
+            <div className="sub">Reporting</div>
           </div>
           <div className="seven">
             <div>
               <p className="body">
-                First time user is asked to rate at least 10 movies to get
-                initial profile and recommendations. Movies are fetched from the
-                TMDB api, sorted by the most rated movies.
+                The reporting section had enterprise level data that could be
+                intimidating to small business owners. The goal was to create
+                friendly interface so that customers take actions easily.
+                Business goal was to introduce more solutions.
               </p>
               <div className="media">
-                <img
-                  src="https://user-images.githubusercontent.com/44072645/107152550-638bb380-691d-11eb-94a0-22bd4fc2b110.gif"
-                  alt=""
-                />
+                <img src={Report} alt="" />
+              </div>
+              <div className="media">
+                <img src={Report2} alt="" />
               </div>
             </div>
           </div>
         </Section>
         <Section>
           <div className="three">
-            <div className="sub">Profile</div>
+            <div className="sub">Mobile</div>
           </div>
           <div className="seven">
             <div>
               <p className="body">
-                Then a user can check out personalized profile, analyzed by
-                liked and disliked movies, liked genres and directors and
-                languages watched in.
+                To increase the engagement level with the product, it was
+                necessary to create a mobile app so that business owners could
+                easily send and receive messages and respond to customer
+                questions on the go. I was involved in the entire design process
+                from defining the problem to UI design.
               </p>
               <div className="media">
-                <img
-                  src="https://user-images.githubusercontent.com/44072645/107152871-47891180-691f-11eb-9891-421487b29517.gif"
-                  alt=""
-                />
-              </div>
-            </div>
-          </div>
-        </Section>
-        <Section>
-          <div className="three">
-            <div className="sub">Keyword</div>
-          </div>
-          <div className="seven">
-            <div>
-              <p className="body">
-                On details page, user can save keywords that describe why you
-                liked the movie. It will be included in the profile and also be
-                used to give better recommendatiions.
-              </p>
-              <div className="media">
-                <img
-                  src="https://user-images.githubusercontent.com/44072645/107153183-faa63a80-6920-11eb-8999-e3ed7fce8eec.gif"
-                  alt=""
-                />
-              </div>
-            </div>
-          </div>
-        </Section>
-        <Section>
-          <div className="three">
-            <div className="sub">Recommendations</div>
-          </div>
-          <div className="seven">
-            <div>
-              <p className="body">
-                Movies are recommended based on users liked moives, liked genres
-                and liked keywords.
-              </p>
-              <div className="media">
-                <img
-                  src="https://user-images.githubusercontent.com/44072645/107153305-a3ed3080-6921-11eb-877d-55e84ec09f51.gif"
-                  alt=""
-                />
+                <img src={Mobile} alt="" />
               </div>
             </div>
           </div>
@@ -296,7 +232,7 @@ const Section = styled(Flex)`
     /* background-color: #fafafa; */
     display: flex;
     justify-content: center;
-    padding: 1em 0;
+    padding: 0;
     margin: 1em 0;
 
     img {
@@ -325,4 +261,4 @@ const Section = styled(Flex)`
   }
 `;
 
-export default Movie;
+export default EZText;

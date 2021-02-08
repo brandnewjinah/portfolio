@@ -1,8 +1,6 @@
-import React, { FC } from "react";
+import React from "react";
 
-interface BioProps {}
-
-const Bio: FC<BioProps> = () => {
+const Bio = () => {
   return (
     <div>
       I'm a front-end developer with UX/UI design background. .my goal is to

@@ -9,13 +9,11 @@ import styled from "styled-components";
 //import syles and assets
 import Colors from "../../components/Colors";
 import { ArrowUpRight } from "../../assets/Icons";
-import Flow from "../../assets/movies/movies_flow.jpg";
 
-const Movie = () => {
+const UIComp = () => {
   useLayoutEffect(() => {
     window.scrollTo(0, 0);
   });
-
   return (
     <Wrapper>
       <Link to="/">
@@ -24,30 +22,19 @@ const Movie = () => {
       <Main>
         <Section>
           <div className="three">
-            <div className="header">Movie Ratings</div>
+            <div className="header">Mobile UI Components</div>
             {/* <div className="overline">/ Web Development</div> */}
           </div>
           <div className="seven">
             <div className="description">
-              Rate movies you've watched, get a personalized movie profile and
-              get recommendations.
+              React Native UI components built in functional components, that
+              are highly customizable.
             </div>
 
             <div className="btncontainer">
-              <a target="_blank" href="https://mymovieprofile.netlify.app/">
-                <div className="btn">
-                  <div>LIVE</div>
-                  <ArrowUpRight
-                    width="14"
-                    height="14"
-                    color="#000"
-                    stroke="2"
-                  />
-                </div>
-              </a>
               <a
                 target="_blank"
-                href="https://github.com/brandnewjinah/mymovies"
+                href="https://github.com/brandnewjinah/react-native-ui"
               >
                 <div className="btn">
                   <div>GITHUB</div>
@@ -69,7 +56,7 @@ const Movie = () => {
           <div className="seven">
             <div>
               <p className="body">
-                React, Redux, Prop Types, Styled-Components
+                React Native, Typescript, Styled-Components, Expo.
               </p>
             </div>
           </div>
@@ -81,48 +68,31 @@ const Movie = () => {
           <div className="seven">
             <div>
               <p className="body">
-                I wanted to understand myself better by analyzing my movie
-                preferences. Then, I wanted to use the data to help me make
-                decision with what to watch on streaming apps.
+                With my background in UX/UI design, I wanted to build
+                customizable UI components that applied the best UX practices
+                and elegant designs. One problem I had with some of the existing
+                UI components was a lot of them looked a bit generic and seemed
+                hard to fit into certain brands. I'm constantly building so once
+                I have enough components to share, I'll figure out a way to
+                distrubute them properly.
               </p>
             </div>
           </div>
         </Section>
         <Section>
           <div className="three">
-            <div className="sub">Process</div>
+            <div className="sub">Buttons</div>
           </div>
           <div className="seven">
             <div>
               <p className="body">
-                I created a user flow first to organize structure, main events
-                and routes.
-              </p>
-              <div className="media">
-                <a href="https://user-images.githubusercontent.com/44072645/107153364-f75f7e80-6921-11eb-9804-4c5746adef68.jpg">
-                  <img
-                    src="https://user-images.githubusercontent.com/44072645/107153364-f75f7e80-6921-11eb-9804-4c5746adef68.jpg"
-                    alt=""
-                  />
-                </a>
-              </div>
-            </div>
-          </div>
-        </Section>
-        <Section>
-          <div className="three">
-            <div className="sub">Rate</div>
-          </div>
-          <div className="seven">
-            <div>
-              <p className="body">
-                First time user is asked to rate at least 10 movies to get
-                initial profile and recommendations. Movies are fetched from the
-                TMDB api, sorted by the most rated movies.
+                A component that allows user to press to take actions. You can
+                choose shpaes, add left or right arrows, resize, disable or
+                insert icons.
               </p>
               <div className="media">
                 <img
-                  src="https://user-images.githubusercontent.com/44072645/107152550-638bb380-691d-11eb-94a0-22bd4fc2b110.gif"
+                  src="https://raw.githubusercontent.com/brandnewjinah/react-native-ui/master/assets/readme/Buttons.png"
                   alt=""
                 />
               </div>
@@ -131,18 +101,19 @@ const Movie = () => {
         </Section>
         <Section>
           <div className="three">
-            <div className="sub">Profile</div>
+            <div className="sub">Lists</div>
           </div>
           <div className="seven">
             <div>
               <p className="body">
-                Then a user can check out personalized profile, analyzed by
-                liked and disliked movies, liked genres and directors and
-                languages watched in.
+                A component to render continuous lists. You can customize to
+                have only texts or add avatar. Avatar can include an image, user
+                initial or a default icon. You can have unread property for
+                messaging.
               </p>
               <div className="media">
                 <img
-                  src="https://user-images.githubusercontent.com/44072645/107152871-47891180-691f-11eb-9891-421487b29517.gif"
+                  src="https://raw.githubusercontent.com/brandnewjinah/react-native-ui/master/assets/readme/ListAvatar%402x.png"
                   alt=""
                 />
               </div>
@@ -151,18 +122,18 @@ const Movie = () => {
         </Section>
         <Section>
           <div className="three">
-            <div className="sub">Keyword</div>
+            <div className="sub">Input</div>
           </div>
           <div className="seven">
             <div>
               <p className="body">
-                On details page, user can save keywords that describe why you
-                liked the movie. It will be included in the profile and also be
-                used to give better recommendatiions.
+                A component to allow user to input text. You can choose from
+                different shapes, insert prefix, customize color, disable or
+                pass error message.
               </p>
               <div className="media">
                 <img
-                  src="https://user-images.githubusercontent.com/44072645/107153183-faa63a80-6920-11eb-8999-e3ed7fce8eec.gif"
+                  src="https://raw.githubusercontent.com/brandnewjinah/react-native-ui/master/assets/readme/Input.png"
                   alt=""
                 />
               </div>
@@ -171,17 +142,56 @@ const Movie = () => {
         </Section>
         <Section>
           <div className="three">
-            <div className="sub">Recommendations</div>
+            <div className="sub">Cards</div>
           </div>
           <div className="seven">
             <div>
               <p className="body">
-                Movies are recommended based on users liked moives, liked genres
-                and liked keywords.
+                Card is a rectangular container that groups related contents and
+                actions about a single subject.
               </p>
               <div className="media">
                 <img
-                  src="https://user-images.githubusercontent.com/44072645/107153305-a3ed3080-6921-11eb-877d-55e84ec09f51.gif"
+                  src="https://raw.githubusercontent.com/brandnewjinah/react-native-ui/master/assets/readme/CardLayout2%402x.png"
+                  alt=""
+                />
+              </div>
+            </div>
+          </div>
+        </Section>
+        <Section>
+          <div className="three">
+            <div className="sub">Scroll Menu</div>
+          </div>
+          <div className="seven">
+            <div>
+              <p className="body">
+                Scroll Menu acts as a naviation component for a set of tabs that
+                cannot fit on a screen. You can pass data in an array for menu
+                items.
+              </p>
+              <div className="media">
+                <img
+                  src="https://raw.githubusercontent.com/brandnewjinah/react-native-ui/master/assets/readme/ScrollMenu.gif"
+                  alt=""
+                />
+              </div>
+            </div>
+          </div>
+        </Section>
+        <Section>
+          <div className="three">
+            <div className="sub">Bottom Sheeet</div>
+          </div>
+          <div className="seven">
+            <div>
+              <p className="body">
+                Bottom Sheet is a botoom-anchored container that holds contents
+                or actions. It slides up on top of a fade-in-modal.
+              </p>
+              <div className="media">
+                <img
+                  src="https://raw.githubusercontent.com/brandnewjinah/react-native-ui/master/assets/readme/BottomSheet.gif"
                   alt=""
                 />
               </div>
@@ -293,10 +303,10 @@ const Section = styled(Flex)`
 
   .media {
     width: 100%;
-    /* background-color: #fafafa; */
+    background-color: #fafafa;
     display: flex;
     justify-content: center;
-    padding: 1em 0;
+    padding: 2em 6em;
     margin: 1em 0;
 
     img {
@@ -325,4 +335,4 @@ const Section = styled(Flex)`
   }
 `;
 
-export default Movie;
+export default UIComp;

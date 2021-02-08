@@ -1,4 +1,4 @@
-import React, { FC } from "react";
+import React from "react";
 import { Link } from "react-router-dom";
 
 //import components
@@ -14,9 +14,7 @@ import UX from "../assets/thumb/ux_thumb.jpg";
 import Movies from "../assets/thumb/movies_thumb.jpg";
 import Shop from "../assets/thumb/shop_thumb.jpg";
 
-interface Props {}
-
-const Project: FC<Props> = () => {
+const Project = () => {
   return (
     <Container>
       <Header>
@@ -27,19 +25,7 @@ const Project: FC<Props> = () => {
           struggled to solve the problems :)
         </p>
       </Header>
-      <Link to="/shop">
-        <List
-          img={Shop}
-          title="Ecommerce"
-          overline="Web Development"
-          color="#9dbbad"
-        >
-          <p>
-            Ecommerce site for snacks focused on customer shopping experience
-            and admin product management.
-          </p>
-        </List>
-      </Link>
+
       <Link to="/movies">
         <List
           img={Movies}
@@ -50,6 +36,19 @@ const Project: FC<Props> = () => {
           <p>
             Movie ratings app where you can rate movies you've watched and get
             personalized recommendations.
+          </p>
+        </List>
+      </Link>
+      <Link to="/shop">
+        <List
+          img={Shop}
+          title="Ecommerce"
+          overline="Web Development"
+          color="#9dbbad"
+        >
+          <p>
+            Ecommerce site for snacks focused on customer shopping experience
+            and admin product management.
           </p>
         </List>
       </Link>

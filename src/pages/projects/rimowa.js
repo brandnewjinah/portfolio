@@ -9,13 +9,13 @@ import styled from "styled-components";
 //import syles and assets
 import Colors from "../../components/Colors";
 import { ArrowUpRight } from "../../assets/Icons";
-import Flow from "../../assets/movies/movies_flow.jpg";
+import PLP from "../../assets/rimowa/rimowa_plp.gif";
+import Purchase from "../../assets/rimowa/rimowa_purchase.gif";
 
-const Movie = () => {
+const Rimowa = () => {
   useLayoutEffect(() => {
     window.scrollTo(0, 0);
   });
-
   return (
     <Wrapper>
       <Link to="/">
@@ -24,30 +24,18 @@ const Movie = () => {
       <Main>
         <Section>
           <div className="three">
-            <div className="header">Movie Ratings</div>
+            <div className="header">Rimowa.com Clone</div>
             {/* <div className="overline">/ Web Development</div> */}
           </div>
           <div className="seven">
             <div className="description">
-              Rate movies you've watched, get a personalized movie profile and
-              get recommendations.
+              An e-commerce site for luxury travel gears.
             </div>
 
             <div className="btncontainer">
-              <a target="_blank" href="https://mymovieprofile.netlify.app/">
-                <div className="btn">
-                  <div>LIVE</div>
-                  <ArrowUpRight
-                    width="14"
-                    height="14"
-                    color="#000"
-                    stroke="2"
-                  />
-                </div>
-              </a>
               <a
                 target="_blank"
-                href="https://github.com/brandnewjinah/mymovies"
+                href="https://github.com/brandnewjinah/Rimowa_Clone"
               >
                 <div className="btn">
                   <div>GITHUB</div>
@@ -68,9 +56,7 @@ const Movie = () => {
           </div>
           <div className="seven">
             <div>
-              <p className="body">
-                React, Redux, Prop Types, Styled-Components
-              </p>
+              <p className="body">React, Redux, Styled-Components</p>
             </div>
           </div>
         </Section>
@@ -81,48 +67,44 @@ const Movie = () => {
           <div className="seven">
             <div>
               <p className="body">
-                I wanted to understand myself better by analyzing my movie
-                preferences. Then, I wanted to use the data to help me make
-                decision with what to watch on streaming apps.
+                As a part of the bootcamp projects, I cloned this site along
+                with 2 front-end devlopers and 2 back-end developers. The goal
+                was to create a seamless checkout flow.
               </p>
             </div>
           </div>
         </Section>
         <Section>
           <div className="three">
-            <div className="sub">Process</div>
+            <div className="sub">Demo</div>
           </div>
           <div className="seven">
-            <div>
-              <p className="body">
-                I created a user flow first to organize structure, main events
-                and routes.
-              </p>
-              <div className="media">
-                <a href="https://user-images.githubusercontent.com/44072645/107153364-f75f7e80-6921-11eb-9804-4c5746adef68.jpg">
-                  <img
-                    src="https://user-images.githubusercontent.com/44072645/107153364-f75f7e80-6921-11eb-9804-4c5746adef68.jpg"
-                    alt=""
-                  />
-                </a>
-              </div>
+            <div className="media">
+              <iframe
+                title="rimowa"
+                width="100%"
+                height="390"
+                src="https://www.youtube.com/embed/a3mt9oeqr9Q"
+                frameBorder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowFullScreen
+              ></iframe>
             </div>
           </div>
         </Section>
         <Section>
           <div className="three">
-            <div className="sub">Rate</div>
+            <div className="sub">Signup / Login</div>
           </div>
           <div className="seven">
             <div>
               <p className="body">
-                First time user is asked to rate at least 10 movies to get
-                initial profile and recommendations. Movies are fetched from the
-                TMDB api, sorted by the most rated movies.
+                I was responsible for all of the UI elements, form validation
+                and server communications.
               </p>
               <div className="media">
                 <img
-                  src="https://user-images.githubusercontent.com/44072645/107152550-638bb380-691d-11eb-94a0-22bd4fc2b110.gif"
+                  src="https://brandnewjinah.github.io/static/rimowa_register-5f1b3c23bf5ec7d209a91534badcabc9.gif"
                   alt=""
                 />
               </div>
@@ -131,57 +113,51 @@ const Movie = () => {
         </Section>
         <Section>
           <div className="three">
-            <div className="sub">Profile</div>
+            <div className="sub">Filter and Sort</div>
           </div>
           <div className="seven">
             <div>
               <p className="body">
-                Then a user can check out personalized profile, analyzed by
-                liked and disliked movies, liked genres and directors and
-                languages watched in.
+                This page was originally initiated by another developer. I
+                refactored the code using hooks and added filter/sort
+                functionality.
               </p>
               <div className="media">
-                <img
-                  src="https://user-images.githubusercontent.com/44072645/107152871-47891180-691f-11eb-9891-421487b29517.gif"
-                  alt=""
-                />
+                <img src={PLP} alt="" />
+              </div>
+            </div>
+          </div>
+        </Section>
+
+        <Section>
+          <div className="three">
+            <div className="sub">Shopping Cart</div>
+          </div>
+          <div className="seven">
+            <div>
+              <p className="body">
+                I was responsible for creating product detail page and cart
+                page. I used Redux to store cart items.
+              </p>
+              <div className="media">
+                <img src={Purchase} alt="" />
               </div>
             </div>
           </div>
         </Section>
         <Section>
           <div className="three">
-            <div className="sub">Keyword</div>
+            <div className="sub">Homepage</div>
           </div>
           <div className="seven">
             <div>
               <p className="body">
-                On details page, user can save keywords that describe why you
-                liked the movie. It will be included in the profile and also be
-                used to give better recommendatiions.
+                I worked on the full page laout and implemented animation using
+                CSS keyframes.
               </p>
               <div className="media">
                 <img
-                  src="https://user-images.githubusercontent.com/44072645/107153183-faa63a80-6920-11eb-8999-e3ed7fce8eec.gif"
-                  alt=""
-                />
-              </div>
-            </div>
-          </div>
-        </Section>
-        <Section>
-          <div className="three">
-            <div className="sub">Recommendations</div>
-          </div>
-          <div className="seven">
-            <div>
-              <p className="body">
-                Movies are recommended based on users liked moives, liked genres
-                and liked keywords.
-              </p>
-              <div className="media">
-                <img
-                  src="https://user-images.githubusercontent.com/44072645/107153305-a3ed3080-6921-11eb-877d-55e84ec09f51.gif"
+                  src="https://brandnewjinah.github.io/static/rimowa_homepage-f8df51febd314b4755d06442965a4796.gif"
                   alt=""
                 />
               </div>
@@ -293,7 +269,7 @@ const Section = styled(Flex)`
 
   .media {
     width: 100%;
-    /* background-color: #fafafa; */
+    background-color: #fafafa;
     display: flex;
     justify-content: center;
     padding: 1em 0;
@@ -325,4 +301,4 @@ const Section = styled(Flex)`
   }
 `;
 
-export default Movie;
+export default Rimowa;

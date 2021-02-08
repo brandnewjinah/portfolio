@@ -1,11 +1,9 @@
-import React, { FC } from "react";
+import React from "react";
 
 //import syles and assets
 import styled from "styled-components";
 
-interface Props {}
-
-const About: FC<Props> = () => {
+const About = () => {
   return (
     <Container>
       <h1 className="header">Front-end Developer</h1>

@@ -1,4 +1,4 @@
-import React, { FC } from "react";
+import React from "react";
 import { Link } from "react-router-dom";
 
 //import components
@@ -10,9 +10,9 @@ import Project from "./Project";
 import styled from "styled-components";
 import { Github, Linkedin } from "../assets/Icons";
 
-interface Props {}
 
-const Home: FC<Props> = () => {
+
+const Home = () => {
   return (
     <Wrapper>
       <div style={{ backgroundColor: "#f9e9e7" }}>

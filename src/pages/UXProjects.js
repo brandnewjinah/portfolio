@@ -1,4 +1,4 @@
-import React, { FC, useEffect } from "react";
+import React, { useLayoutEffect } from "react";
 import { Link } from "react-router-dom";
 
 //import components
@@ -12,12 +12,10 @@ import BBD from "../assets/thumb/bbd_thumb.jpg";
 import Revolve from "../assets/thumb/re_thumb.jpg";
 import Mahalo from "../assets/thumb/ma_thumb.jpg";
 
-interface Props {}
-
-const UXProjects: FC<Props> = () => {
-  useEffect(() => {
+const UXProjects = () => {
+  useLayoutEffect(() => {
     window.scrollTo(0, 0);
-  }, []);
+  });
 
   return (
     <Wrapper>
@@ -106,6 +104,7 @@ const UXProjects: FC<Props> = () => {
 
 const Wrapper = styled.main`
   width: 100%;
+  min-height: 100vh;
   background-color: #e2f0e9;
 `;
 
@@ -114,15 +113,12 @@ const Logo = styled.div`
   justify-content: center;
   align-items: center;
   position: fixed;
-  width: 40px;
-  height: 40px;
-  top: 6em;
-  background-color: #8db09f;
-  color: #e2f0e9;
-
-  @media (max-width: 950px) {
-    top: 0;
-  }
+  width: 2.5em;
+  height: 2.5em;
+  top: 1em;
+  left: 1em;
+  background-color: #000;
+  color: #fff;
 `;
 
 const Section = styled.section`

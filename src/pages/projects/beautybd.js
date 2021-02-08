@@ -9,12 +9,18 @@ import styled from "styled-components";
 //import syles and assets
 import Colors from "../../components/Colors";
 import { ArrowUpRight } from "../../assets/Icons";
+import Cover from "../../assets/beautybd/cover.jpg";
+import Journey from "../../assets/beautybd/journey.jpg";
+import Wire1 from "../../assets/beautybd/bbyd_wire_1.jpg";
+import Wire2 from "../../assets/beautybd/bbyd_wire_2.jpg";
+import Wire3 from "../../assets/beautybd/bbyd_wire_3.jpg";
+import Wire4 from "../../assets/beautybd/bbyd_wire_4.jpg";
+import UI from "../../assets/beautybd/bbyd_UI_1.jpg";
 
-const Shop = () => {
+const Gladeo = () => {
   useLayoutEffect(() => {
     window.scrollTo(0, 0);
   });
-
   return (
     <Wrapper>
       <Link to="/">
@@ -23,153 +29,94 @@ const Shop = () => {
       <Main>
         <Section>
           <div className="three">
-            <div className="header">E-Commerce</div>
+            <div className="header">Beauty By Design</div>
             {/* <div className="overline">/ Web Development</div> */}
           </div>
           <div className="seven">
             <div className="description">
-              Shop for snacks as a customer, manage products and orders as an
-              admin.
+              An online skincare concierge that connects customers with
+              professional estheticians.
             </div>
+            <div className="media">
+              <img src={Cover} alt="" />
+            </div>
+          </div>
+        </Section>
 
-            <div className="btncontainer">
-              <a target="_blank" href="http://myshopdemo.netlify.app/">
-                <div className="btn">
-                  <div>LIVE</div>
-                  <ArrowUpRight
-                    width="14"
-                    height="14"
-                    color="#000"
-                    stroke="2"
-                  />
-                </div>
-              </a>
-              <a
-                target="_blank"
-                href="https://github.com/brandnewjinah/ecommerce"
-              >
-                <div className="btn">
-                  <div>GITHUB</div>
-                  <ArrowUpRight
-                    width="14"
-                    height="14"
-                    color="#000"
-                    stroke="2"
-                  />
-                </div>
-              </a>
-            </div>
-          </div>
-        </Section>
         <Section>
           <div className="three">
-            <div className="sub">Stacks</div>
+            <div className="sub">Role</div>
           </div>
           <div className="seven">
             <div>
               <p className="body">
-                React, Redux, Styled-Components, Node.js and MongoDB work in
-                progress.
+                My role was to create UX/UI design for the responsive site that
+                provides accurate skin diagnoses and recommends personalized
+                skincare products.
               </p>
             </div>
           </div>
         </Section>
         <Section>
           <div className="three">
-            <div className="sub">Why</div>
+            <div className="sub">Define</div>
           </div>
           <div className="seven">
             <div>
               <p className="body">
-                I've always wondered how ecommerce works in a deeper level. What
-                happens before and after customers make purchase? How are
-                products stored and organized in the database? How are orders
-                managed? To answer my own questions, I decided to create a
-                customer facing, an admin facing interfaces and a database.
-              </p>
-            </div>
-          </div>
-        </Section>
-        <Section>
-          <div className="three">
-            <div className="sub">Process</div>
-          </div>
-          <div className="seven">
-            <div>
-              <p className="body">
-                Here are some examples of the sketches I've done to organize
-                pages, models and flows before start coding.
+                The goal was to create a mobile centric platform - starting with
+                the web then move onto mobile. The challenge was to have
+                seamless consultation, evaluation and shopping experience with
+                limited web-based technology. I created a user journey map to
+                make sure there's no hurdle in the process.
               </p>
               <div className="media">
-                <img
-                  src="https://user-images.githubusercontent.com/44072645/107262877-f435c280-69f5-11eb-9261-fe5e9159a6be.jpg"
-                  alt=""
-                />
-              </div>
-              <div className="media">
-                <img
-                  src="https://user-images.githubusercontent.com/44072645/107262946-04e63880-69f6-11eb-95d5-2470d7ece54b.jpg"
-                  alt=""
-                />
+                <img src={Journey} alt="" />
               </div>
             </div>
           </div>
         </Section>
         <Section>
           <div className="three">
-            <div className="sub">Admin</div>
+            <div className="sub">Wireframes</div>
           </div>
           <div className="seven">
             <div>
               <p className="body">
-                I created a basic CMS where an admin can track sales, manage
-                products, view customer orders and customer information.
+                Implementing the skin analysis and evaluation step was the most
+                challenging yet critical part of the design. Because of limited
+                technology resources, customers had to be driven out of the site
+                for their native camera usage. It was really important to drive
+                them back to the site to complete their experience. I created
+                high fidelity wireframes with interaction guidelines.
               </p>
               <div className="media">
-                <img
-                  src="https://user-images.githubusercontent.com/44072645/106151583-5b6b9100-6131-11eb-85d4-1e81ee260b25.gif"
-                  alt=""
-                />
+                <img src={Wire1} alt="" />
+              </div>
+              <div className="media">
+                <img src={Wire2} alt="" />
+              </div>
+              <div className="media">
+                <img src={Wire3} alt="" />
+              </div>
+              <div className="media">
+                <img src={Wire4} alt="" />
               </div>
             </div>
           </div>
         </Section>
         <Section>
           <div className="three">
-            <div className="sub">Customer</div>
+            <div className="sub">UI Design</div>
           </div>
           <div className="seven">
             <div>
               <p className="body">
-                A customer can browse products as categorized by an admin.
-                Similar items on the detail page are pulled from the same
-                sub-category.
+                I gave the initial UI design guidelines. I provded layout files
+                as well as design guidelines document.
               </p>
               <div className="media">
-                <img
-                  src="https://user-images.githubusercontent.com/44072645/106151996-cf0d9e00-6131-11eb-96db-99c283978627.gif"
-                  alt=""
-                />
-              </div>
-            </div>
-          </div>
-        </Section>
-        <Section>
-          <div className="three">
-            <div className="sub">Checkout</div>
-          </div>
-          <div className="seven">
-            <div>
-              <p className="body">
-                A customer can edit quantity, delete item and checkout items
-                from your cart. For the demo purpose, it's all controlled by
-                redux.
-              </p>
-              <div className="media">
-                <img
-                  src="https://user-images.githubusercontent.com/44072645/106151169-ee57fb80-6130-11eb-9d8c-24c8bcdbdc4e.gif"
-                  alt=""
-                />
+                <img src={UI} alt="" />
               </div>
             </div>
           </div>
@@ -282,7 +229,7 @@ const Section = styled(Flex)`
     /* background-color: #fafafa; */
     display: flex;
     justify-content: center;
-    padding: 1em 0;
+    padding: 0;
     margin: 1em 0;
 
     img {
@@ -311,4 +258,4 @@ const Section = styled(Flex)`
   }
 `;
 
-export default Shop;
+export default Gladeo;

@@ -16,15 +16,14 @@ const GlobalStyle = createGlobalStyle`
         margin: 0;
         padding: 0;
         background-color: white;
-        font-family: 'Inter', sans-serif;
-        font-size: 1.125rem;
-        line-height: 1.875rem;
-        font-weight: 400;
+        font-family: 'Open Sans', sans-serif;
+        font-size: 1rem;
+        line-height: 1.75rem;
     }
     h1 {
         font-family: "Raleway", sans-serif;
         font-weight: 700;
-        font-size: 3.25rem;
+        font-size: 3rem;
         line-height: 3.75rem;
     }
     h2 {
@@ -34,7 +33,6 @@ const GlobalStyle = createGlobalStyle`
         line-height: 3.4rem;
     }
     h3 {
-
         font-weight: 500;
         font-size: 2rem;
         line-height: 3.5rem;

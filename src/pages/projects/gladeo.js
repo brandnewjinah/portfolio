@@ -9,13 +9,19 @@ import styled from "styled-components";
 //import syles and assets
 import Colors from "../../components/Colors";
 import { ArrowUpRight } from "../../assets/Icons";
-import Flow from "../../assets/movies/movies_flow.jpg";
+import Cover from "../../assets/gladeo/cover.jpg";
+import Challenge from "../../assets/gladeo/gladeo_challenge.jpg";
+import Model1 from "../../assets/gladeo/gladeo_user_model1.jpg";
+import Model2 from "../../assets/gladeo/gladeo_user_model2.jpg";
+import Sitemap from "../../assets/gladeo/gladeo_sitemap.jpg";
+import Wire1 from "../../assets/gladeo/gladeo_wire_1.jpg";
+import Wire2 from "../../assets/gladeo/gladeo_wire_2.jpg";
+import UI from "../../assets/gladeo/gladeo_ui.jpg";
 
-const Movie = () => {
+const Gladeo = () => {
   useLayoutEffect(() => {
     window.scrollTo(0, 0);
   });
-
   return (
     <Wrapper>
       <Link to="/">
@@ -24,166 +30,123 @@ const Movie = () => {
       <Main>
         <Section>
           <div className="three">
-            <div className="header">Movie Ratings</div>
+            <div className="header">Gladeo</div>
             {/* <div className="overline">/ Web Development</div> */}
           </div>
           <div className="seven">
             <div className="description">
-              Rate movies you've watched, get a personalized movie profile and
-              get recommendations.
+              Gladeo is a non profit organization that provides career advice
+              for students in underrepresented areas.
             </div>
 
-            <div className="btncontainer">
-              <a target="_blank" href="https://mymovieprofile.netlify.app/">
-                <div className="btn">
-                  <div>LIVE</div>
-                  <ArrowUpRight
-                    width="14"
-                    height="14"
-                    color="#000"
-                    stroke="2"
-                  />
-                </div>
-              </a>
-              <a
-                target="_blank"
-                href="https://github.com/brandnewjinah/mymovies"
-              >
-                <div className="btn">
-                  <div>GITHUB</div>
-                  <ArrowUpRight
-                    width="14"
-                    height="14"
-                    color="#000"
-                    stroke="2"
-                  />
-                </div>
-              </a>
+            <div className="media">
+              <img src={Cover} alt="" />
             </div>
           </div>
         </Section>
+
         <Section>
           <div className="three">
-            <div className="sub">Stacks</div>
+            <div className="sub">Role</div>
           </div>
           <div className="seven">
             <div>
               <p className="body">
-                React, Redux, Prop Types, Styled-Components
+                My role was to create UX design for Gladeo.org, a portal for
+                students to discover their path and for contributors to inspire
+                students.
               </p>
             </div>
           </div>
         </Section>
         <Section>
           <div className="three">
-            <div className="sub">Why</div>
+            <div className="sub">Challenge</div>
           </div>
           <div className="seven">
             <div>
               <p className="body">
-                I wanted to understand myself better by analyzing my movie
-                preferences. Then, I wanted to use the data to help me make
-                decision with what to watch on streaming apps.
-              </p>
-            </div>
-          </div>
-        </Section>
-        <Section>
-          <div className="three">
-            <div className="sub">Process</div>
-          </div>
-          <div className="seven">
-            <div>
-              <p className="body">
-                I created a user flow first to organize structure, main events
-                and routes.
+                Gladeo needed one space where students and contributors could
+                connect. This meant creating a new platform with knowledge
+                sharing capability, as well as merging contents from two
+                existing sites.
               </p>
               <div className="media">
-                <a href="https://user-images.githubusercontent.com/44072645/107153364-f75f7e80-6921-11eb-9804-4c5746adef68.jpg">
-                  <img
-                    src="https://user-images.githubusercontent.com/44072645/107153364-f75f7e80-6921-11eb-9804-4c5746adef68.jpg"
-                    alt=""
-                  />
-                </a>
+                <img src={Challenge} alt="" />
               </div>
             </div>
           </div>
         </Section>
         <Section>
           <div className="three">
-            <div className="sub">Rate</div>
+            <div className="sub">User Model</div>
           </div>
           <div className="seven">
             <div>
               <p className="body">
-                First time user is asked to rate at least 10 movies to get
-                initial profile and recommendations. Movies are fetched from the
-                TMDB api, sorted by the most rated movies.
+                Based on initial data given by the client, I defined user models
+                that helped incorporating both business goals and user goals. It
+                was importnat to understand how different user group sought
+                after different benefits.
               </p>
               <div className="media">
-                <img
-                  src="https://user-images.githubusercontent.com/44072645/107152550-638bb380-691d-11eb-94a0-22bd4fc2b110.gif"
-                  alt=""
-                />
+                <img src={Model1} alt="" />
+              </div>
+              <div className="media">
+                <img src={Model2} alt="" />
               </div>
             </div>
           </div>
         </Section>
         <Section>
           <div className="three">
-            <div className="sub">Profile</div>
+            <div className="sub">Sitemap</div>
           </div>
           <div className="seven">
             <div>
               <p className="body">
-                Then a user can check out personalized profile, analyzed by
-                liked and disliked movies, liked genres and directors and
-                languages watched in.
+                I created a very thorough sitemaps that captured every aspect of
+                the site.
               </p>
               <div className="media">
-                <img
-                  src="https://user-images.githubusercontent.com/44072645/107152871-47891180-691f-11eb-9891-421487b29517.gif"
-                  alt=""
-                />
+                <img src={Sitemap} alt="" />
               </div>
             </div>
           </div>
         </Section>
         <Section>
           <div className="three">
-            <div className="sub">Keyword</div>
+            <div className="sub">Wireframe</div>
           </div>
           <div className="seven">
             <div>
               <p className="body">
-                On details page, user can save keywords that describe why you
-                liked the movie. It will be included in the profile and also be
-                used to give better recommendatiions.
+                The important thing to consider was providing a place where
+                sutents and contributors could actively build relationships.
+                Gladeo also needed to frequently feed updated information. The
+                solution was to create a portal that was modular and scalable. I
+                created high fidelity wireframes and clickable prototypes.
               </p>
               <div className="media">
-                <img
-                  src="https://user-images.githubusercontent.com/44072645/107153183-faa63a80-6920-11eb-8999-e3ed7fce8eec.gif"
-                  alt=""
-                />
+                <img src={Wire1} alt="" />
               </div>
             </div>
           </div>
         </Section>
         <Section>
           <div className="three">
-            <div className="sub">Recommendations</div>
+            <div className="sub">UI Design</div>
           </div>
           <div className="seven">
             <div>
               <p className="body">
-                Movies are recommended based on users liked moives, liked genres
-                and liked keywords.
+                I stepped in to give an initial UI design guideline. The site
+                was heavy in content, so I recommended keeping the site design
+                to be clean and minimal, but accentuated enough to have
+                encouraging feel throughout.
               </p>
               <div className="media">
-                <img
-                  src="https://user-images.githubusercontent.com/44072645/107153305-a3ed3080-6921-11eb-877d-55e84ec09f51.gif"
-                  alt=""
-                />
+                <img src={UI} alt="" />
               </div>
             </div>
           </div>
@@ -296,7 +259,7 @@ const Section = styled(Flex)`
     /* background-color: #fafafa; */
     display: flex;
     justify-content: center;
-    padding: 1em 0;
+    padding: 0;
     margin: 1em 0;
 
     img {
@@ -325,4 +288,4 @@ const Section = styled(Flex)`
   }
 `;
 
-export default Movie;
+export default Gladeo;

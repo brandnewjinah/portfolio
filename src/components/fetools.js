@@ -1,12 +1,10 @@
-import React, { FC } from "react";
+import React from "react";
 
 //import syles and assets
 import styled from "styled-components";
 import * as Icons from "../assets/Icons";
 
-interface Props {}
-
-const Tools: FC<Props> = () => {
+const Tools = () => {
   return (
     <Container>
       {/* <div>
@@ -155,7 +153,9 @@ const Tool = styled.div`
     }
 
     p {
-      font-weight: 300;
+      font-size: 0.95rem;
+      font-weight: 400;
+      letter-spacing: 0.05rem;
     }
   }
 `;
