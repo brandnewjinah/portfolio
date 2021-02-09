@@ -277,9 +277,8 @@ const Section = styled(Flex)`
     margin-right: 2em;
   }
 
-  .media {
+  /* .media {
     width: 100%;
-    /* background-color: #fafafa; */
     display: flex;
     justify-content: center;
     padding: 1em 0;
@@ -289,6 +288,19 @@ const Section = styled(Flex)`
       width: 100%;
       object-fit: cover;
       margin: 1em 0;
+    }
+  } */
+
+  .media {
+    width: 100%;
+    background-color: #fafafa;
+    padding: 3em;
+    margin: 1em 0;
+
+    img {
+      width: 100%;
+      height: 100%;
+      /* object-fit: contain; */
     }
   }
 
@@ -307,6 +319,12 @@ const Section = styled(Flex)`
 
     .sub {
       text-align: left;
+    }
+
+    .media {
+      background-color: #fff;
+      margin: 1em 0;
+      padding: 0;
     }
   }
 `;

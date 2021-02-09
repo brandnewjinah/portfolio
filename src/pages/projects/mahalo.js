@@ -181,16 +181,14 @@ const Section = styled(Flex)`
 
   .media {
     width: 100%;
-    /* background-color: #fafafa; */
-    display: flex;
-    justify-content: center;
+    background-color: #fafafa;
     padding: 0;
     margin: 1em 0;
 
     img {
       width: 100%;
-      object-fit: cover;
-      margin: 1em 0;
+      height: 100%;
+      /* object-fit: contain; */
     }
   }
 
@@ -209,6 +207,12 @@ const Section = styled(Flex)`
 
     .sub {
       text-align: left;
+    }
+
+    .media {
+      background-color: #fff;
+      margin: 1em 0;
+      padding: 0;
     }
   }
 `;

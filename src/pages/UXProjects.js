@@ -102,7 +102,7 @@ const UXProjects = () => {
   );
 };
 
-const Wrapper = styled.main`
+const Wrapper = styled.div`
   width: 100%;
   min-height: 100vh;
   background-color: #e2f0e9;
@@ -139,10 +139,10 @@ const Section = styled.section`
   }
 
   .col2 {
-    max-width: 100%;
+    /* max-width: 100%; */
     display: flex;
     flex-direction: column;
-    flex: 1 0 0; //grow, shrink , basis
+    flex: 0 0 75%;
   }
 
   .sub {
@@ -169,7 +169,8 @@ const Section = styled.section`
     flex-direction: column;
     padding: 4em;
 
-    .col1 {
+    .col1,
+    .col2 {
       max-width: 100%;
     }
 

@@ -293,16 +293,14 @@ const Section = styled(Flex)`
 
   .media {
     width: 100%;
-    /* background-color: #fafafa; */
-    display: flex;
-    justify-content: center;
-    padding: 1em 0;
+    background-color: #fafafa;
+    padding: 3em;
     margin: 1em 0;
 
     img {
       width: 100%;
-      object-fit: cover;
-      margin: 1em 0;
+      height: 100%;
+      /* object-fit: contain; */
     }
   }
 
@@ -311,6 +309,13 @@ const Section = styled(Flex)`
     padding: 5em 2em 2em;
 
     .three {
+      flex: 0 1 100%;
+      padding-right: 0;
+      text-align: left;
+    }
+
+    .seven {
+      flex: 0 1 100%;
       padding-right: 0;
       text-align: left;
     }
@@ -321,6 +326,12 @@ const Section = styled(Flex)`
 
     .sub {
       text-align: left;
+    }
+
+    .media {
+      background-color: #fff;
+      margin: 1em 0;
+      padding: 0;
     }
   }
 `;

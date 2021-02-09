@@ -306,12 +306,12 @@ const Section = styled(Flex)`
     background-color: #fafafa;
     display: flex;
     justify-content: center;
-    padding: 2em 6em;
+    padding: 2em 8em;
     margin: 1em 0;
 
     img {
       width: 100%;
-      object-fit: cover;
+      height: 100%;
       margin: 1em 0;
     }
   }
@@ -331,6 +331,19 @@ const Section = styled(Flex)`
 
     .sub {
       text-align: left;
+    }
+
+    .media {
+      width: 100%;
+      background-color: #fff;
+      margin: 1em 0;
+      padding: 0;
+
+      img {
+        width: 100%;
+        height: 100%;
+        /* object-fit: contain; */
+      }
     }
   }
 `;
